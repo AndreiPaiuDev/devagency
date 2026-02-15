@@ -1,0 +1,178 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 20px 30px -5px rgba(13, 166, 242, 0.08);
+  transform: translateY(-8px);
+}
+
+.quoteIcon {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  color: #f1f5f9;
+  pointer-events: none;
+}
+
+.quoteIcon .material-symbols-outlined {
+  font-size: 100px;
+  opacity: 0.8;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 0 4px #f8fafc, 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover .avatar {
+  box-shadow: 0 0 0 4px rgba(13, 166, 242, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0f172a;
+  margin: 0;
+}
+
+.role {
+  color: var(--accent);
+  font-weight: 500;
+  margin: 0;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  color: #fbbf24;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 10;
+}
+
+.stars .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+  flex-grow: 1;
+}
+
+.box {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid;
+}
+
+.problem {
+  background: rgba(254, 226, 226, 0.6);
+  border-color: rgba(254, 202, 202, 0.8);
+}
+
+.liked {
+  background: rgba(219, 234, 254, 0.6);
+  border-color: rgba(191, 219, 254, 0.8);
+}
+
+.resultBox {
+  background: rgba(220, 252, 231, 0.6);
+  border-color: rgba(187, 247, 208, 0.8);
+}
+
+.boxHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.problem .boxHeader {
+  color: #dc2626;
+}
+
+.liked .boxHeader {
+  color: var(--accent);
+}
+
+.resultBox .boxHeader {
+  color: #16a34a;
+}
+
+.boxHeader .material-symbols-outlined {
+  font-size: 16px;
+}
+
+.boxText {
+  font-size: 0.875rem;
+  color: #334155;
+  font-weight: 500;
+  margin: 0;
+}
+
+.boxTextBold {
+  font-size: 0.875rem;
+  color: #334155;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tags {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.tag .material-symbols-outlined {
+  font-size: 16px;
+  color: var(--accent);
+}
