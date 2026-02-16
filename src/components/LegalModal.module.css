@@ -1,0 +1,70 @@
+.legal {
+  color: #90b7cb;
+  line-height: 1.7;
+}
+
+.intro {
+  font-size: 0.875rem;
+  color: #6b8998;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.text {
+  margin-bottom: 16px;
+  color: #90b7cb;
+  line-height: 1.7;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.list {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.list li {
+  margin-bottom: 8px;
+  color: #90b7cb;
+}
+
+.list li strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contact {
+  background: rgba(13, 166, 242, 0.1);
+  border-left: 3px solid var(--accent);
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.contact p {
+  margin: 8px 0;
+  color: #90b7cb;
+}
+
+.contact strong {
+  color: #ffffff;
+  font-weight: 600;
+}

@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './Hero.module.css'
 
 function Hero({ dark = false }) {
+  const t = useTranslation()
+  
   return (
     <section className={`${styles.section} ${dark ? styles.dark : ''}`}>
       <div className={styles.container}>
@@ -9,41 +12,39 @@ function Hero({ dark = false }) {
           <div className={styles.copy}>
             <div className={styles.kicker}>
               <span className={styles.ping} />
-              Acceptăm proiecte noi
+              {t.hero.badge}
             </div>
             <div className={styles.titleBlock}>
               <h1>
-                Transformăm{' '}
-                <span className={styles.highlight}>Idei Digitale</span> în
-                Succes Măsurabil
+                {t.hero.title}{' '}
+                <span className={styles.highlight}>{t.hero.titleHighlight}</span> {t.hero.titleEnd}
               </h1>
               <p>
-                De la SaaS-uri complexe la platforme e-commerce scalabile. Nu
-                scriem doar cod, construim afaceri online care performează.
+                {t.hero.subtitle}
               </p>
             </div>
             <div className={styles.ctaRow}>
               <Link to="/contact" className={styles.primary}>
-                <span>Hai să povestim despre proiectul tău!</span>
+                <span>{t.hero.ctaPrimary}</span>
                 <span className="material-symbols-outlined">arrow_forward</span>
                 <div className={styles.sheen} aria-hidden="true" />
               </Link>
               <Link to="/portofoliu" className={styles.secondary}>
-                Vezi Portofoliul
+                {t.hero.ctaSecondary}
               </Link>
             </div>
             <div className={styles.chips}>
               <span className={styles.chip}>
                 <span className="material-symbols-outlined">rocket_launch</span>
-                Lansare Rapidă
+                {t.hero.chip1}
               </span>
               <span className={styles.chip}>
                 <span className="material-symbols-outlined">monitoring</span>
-                Scalabilitate
+                {t.hero.chip2}
               </span>
               <span className={styles.chip}>
                 <span className="material-symbols-outlined">paid</span>
-                ROI Focused
+                {t.hero.chip3}
               </span>
             </div>
           </div>

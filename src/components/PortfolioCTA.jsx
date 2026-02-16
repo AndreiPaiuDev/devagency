@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './PortfolioCTA.module.css'
 
 function PortfolioCTA() {
+  const t = useTranslation()
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -9,14 +12,13 @@ function PortfolioCTA() {
           <div className={styles.gradient} />
           <div className={styles.blob} />
           <div className={styles.content}>
-            <h2 className={styles.title}>Ai o provocare similară?</h2>
+            <h2 className={styles.title}>{t.portfolioCTA.title}</h2>
             <p className={styles.subtitle}>
-              Hai să transformăm ideea ta în următorul nostru studiu de caz de
-              succes.
+              {t.portfolioCTA.subtitle}
             </p>
           </div>
           <Link to="/contact" className={styles.button}>
-            <span>Discută Proiectul Tău</span>
+            <span>{t.portfolioCTA.button}</span>
             <span className="material-symbols-outlined">chat</span>
           </Link>
         </div>

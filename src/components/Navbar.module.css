@@ -113,6 +113,38 @@
   box-shadow: 0 10px 15px -3px rgba(13, 166, 242, 0.3);
 }
 
+.languageToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.languageToggle:hover {
+  background: rgba(144, 183, 203, 0.1);
+}
+
+.langOption {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #90b7cb;
+  transition: color 0.2s ease;
+}
+
+.langOption[data-active="true"] {
+  color: var(--accent);
+}
+
+.langSeparator {
+  color: #475569;
+  font-size: 0.875rem;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -134,6 +166,77 @@
 
 @media (min-width: 768px) {
   .menu {
+    display: none;
+  }
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 16px 0;
+  background: #0c1618;
+  border-top: 1px solid #315668;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobileMenu a {
+  padding: 16px 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #90b7cb;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.mobileMenu a:hover,
+.mobileMenu a.active {
+  color: var(--accent);
+  background: rgba(13, 166, 242, 0.1);
+  border-left-color: var(--accent);
+}
+
+.mobileLanguage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+}
+
+.mobileContact {
+  margin: 8px 24px;
+  display: inline-flex;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--accent);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  border-left: none !important;
+}
+
+.mobileContact:hover {
+  background: #38bdf8 !important;
+  box-shadow: 0 10px 15px -3px rgba(13, 166, 242, 0.3);
+}
+
+@media (min-width: 768px) {
+  .mobileMenu {
     display: none;
   }
 }

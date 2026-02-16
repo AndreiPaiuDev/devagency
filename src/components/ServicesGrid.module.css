@@ -15,9 +15,9 @@
   gap: 48px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .container {
-    padding: 0 80px;
+    padding: 0 32px;
   }
 }
 
@@ -179,6 +179,7 @@
   border: none;
   cursor: pointer;
   transition: color 0.2s ease;
+  text-decoration: none;
 }
 
 .ctaButton:hover {

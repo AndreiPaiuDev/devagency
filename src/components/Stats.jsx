@@ -1,29 +1,32 @@
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './Stats.module.css'
 
-const stats = [
-  {
-    number: '20+',
-    label: 'Proiecte Livrate',
-    icon: 'rocket_launch',
-  },
-  {
-    number: '98%',
-    label: 'Clienți Mulțumiți',
-    icon: 'sentiment_satisfied',
-  },
-  {
-    number: '2+',
-    label: 'Ani Experiență',
-    icon: 'workspace_premium',
-  },
-  {
-    number: '24h',
-    label: 'Timp de Răspuns',
-    icon: 'schedule',
-  },
-]
-
 function Stats() {
+  const t = useTranslation()
+  
+  const stats = [
+    {
+      number: t.stats.projects.number,
+      label: t.stats.projects.label,
+      icon: 'rocket_launch',
+    },
+    {
+      number: t.stats.clients.number,
+      label: t.stats.clients.label,
+      icon: 'sentiment_satisfied',
+    },
+    {
+      number: t.stats.experience.number,
+      label: t.stats.experience.label,
+      icon: 'workspace_premium',
+    },
+    {
+      number: t.stats.response.number,
+      label: t.stats.response.label,
+      icon: 'schedule',
+    },
+  ]
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>

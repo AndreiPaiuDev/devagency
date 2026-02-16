@@ -1,27 +1,27 @@
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './WhyUsFeatures.module.css'
 
-const features = [
-  {
-    icon: 'visibility',
-    title: 'Transparență Totală',
-    description:
-      'Fără costuri ascunse sau "feature-uri" surpriză pe factură. Știi exact pe ce dai banii și unde ajung orele noastre de development.',
-  },
-  {
-    icon: 'bolt',
-    title: 'Viteză & Calitate',
-    description:
-      'Livrăm cod curat care se încarcă instant. Nu facem compromisuri la performanță doar ca să terminăm mai repede. Optimizat pentru SEO din start.',
-  },
-  {
-    icon: 'support_agent',
-    title: 'Suport Continuu',
-    description:
-      'Nu dispărem în ceață după lansare. Rămânem partenerii tăi tehnici pe termen lung pentru update-uri, mentenanță și scaling.',
-  },
-]
-
 function WhyUsFeatures() {
+  const t = useTranslation()
+  
+  const features = [
+    {
+      icon: 'visibility',
+      title: t.whyUsFeatures.features.transparency.title,
+      description: t.whyUsFeatures.features.transparency.description,
+    },
+    {
+      icon: 'bolt',
+      title: t.whyUsFeatures.features.speed.title,
+      description: t.whyUsFeatures.features.speed.description,
+    },
+    {
+      icon: 'support_agent',
+      title: t.whyUsFeatures.features.support.title,
+      description: t.whyUsFeatures.features.support.description,
+    },
+  ]
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>

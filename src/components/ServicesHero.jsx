@@ -1,6 +1,10 @@
+import { Link } from 'react-router-dom'
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './ServicesHero.module.css'
 
 function ServicesHero() {
+  const t = useTranslation()
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -8,23 +12,23 @@ function ServicesHero() {
           <div className={styles.copy}>
             <div className={styles.kicker}>
               <span className={styles.ping} />
-              Disponibili pentru proiecte noi
+              {t.servicesHero.badge}
             </div>
             <h1>
-              Nu scriem doar cod,{' '}
-              <span className={styles.highlight}>construim afaceri</span>.
+              {t.servicesHero.title}{' '}
+              <span className={styles.highlight}>{t.servicesHero.titleHighlight}</span>.
             </h1>
             <p>
-              Soluții tech pentru dureri de cap non-tech. Transformăm ideile tale îndrăznețe în produse digitale scalabile și profitabile, fără jargon corporatist inutil.
+              {t.servicesHero.subtitle}
             </p>
             <div className={styles.ctaRow}>
               <button className={styles.primary} type="button">
-                Vezi cum te putem ajuta
+                {t.servicesHero.ctaPrimary}
                 <span className="material-symbols-outlined">arrow_downward</span>
               </button>
-              <button className={styles.secondary} type="button">
-                Portofoliu Recent
-              </button>
+              <Link to="/portofoliu" className={styles.secondary}>
+                {t.servicesHero.ctaSecondary}
+              </Link>
             </div>
           </div>
           <div className={styles.visual}>

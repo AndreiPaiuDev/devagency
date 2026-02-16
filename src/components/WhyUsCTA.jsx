@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './WhyUsCTA.module.css'
 
 function WhyUsCTA() {
+  const t = useTranslation()
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -9,19 +12,17 @@ function WhyUsCTA() {
           <div className={styles.blurTop} />
           <div className={styles.blurBottom} />
           <div className={styles.content}>
-            <h2 className={styles.title}>Ai o idee genială?</h2>
-            <h3 className={styles.subtitle}>Hai să o construim împreună.</h3>
+            <h2 className={styles.title}>{t.whyUsCTA.title}</h2>
+            <h3 className={styles.subtitle}>{t.whyUsCTA.subtitle}</h3>
             <p className={styles.description}>
-              Nu lăsa proiectul tău să rămână doar o notiță în telefon.
-              Contactează-ne și hai să vedem cum putem colabora pentru succesul
-              tău.
+              {t.whyUsCTA.description}
             </p>
             <div className={styles.buttons}>
               <Link to="/contact" className={styles.primary}>
-                <span>Cere Ofertă Gratuită</span>
+                <span>{t.whyUsCTA.buttonPrimary}</span>
                 <span className="material-symbols-outlined">arrow_forward</span>
               </Link>
-              <Link to="/portofoliu" className={styles.secondary}>Vezi Portofoliul</Link>
+              <Link to="/portofoliu" className={styles.secondary}>{t.whyUsCTA.buttonSecondary}</Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './TechStack.module.css'
 
 const technologies = [
@@ -10,10 +11,12 @@ const technologies = [
 ]
 
 function TechStack() {
+  const t = useTranslation()
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h3 className={styles.title}>Tehnologiile cu care construim viitorul</h3>
+        <h3 className={styles.title}>{t.techStack.title}</h3>
         <div className={styles.grid}>
           {technologies.map((tech, index) => (
             <div key={index} className={styles.tech}>

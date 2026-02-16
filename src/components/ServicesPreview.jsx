@@ -1,52 +1,50 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './ServicesPreview.module.css'
 
-const services = [
-  {
-    icon: 'code',
-    title: 'Dezvoltare Web',
-    description:
-      'Aplicații web scalabile cu React, Node.js și tehnologii moderne.',
-    features: ['SaaS Platforms', 'E-commerce', 'Dashboards'],
-  },
-  {
-    icon: 'phone_iphone',
-    title: 'Aplicații Mobile',
-    description:
-      'Aplicații native și cross-platform pentru iOS și Android.',
-    features: ['React Native', 'Flutter', 'Progressive Web Apps'],
-  },
-  {
-    icon: 'palette',
-    title: 'UI/UX Design',
-    description:
-      'Design modern, intuitiv și conversion-focused pentru produsul tău.',
-    features: ['User Research', 'Prototyping', 'Design Systems'],
-  },
-  {
-    icon: 'speed',
-    title: 'Optimizare Performanță',
-    description:
-      'Îmbunătățim viteza și performanța aplicațiilor tale existente.',
-    features: ['Performance Audit', 'SEO', 'Core Web Vitals'],
-  },
-]
-
 function ServicesPreview() {
+  const t = useTranslation()
+  
+  const services = [
+    {
+      icon: 'code',
+      title: t.servicesPreview.services.webDev.title,
+      description: t.servicesPreview.services.webDev.description,
+      features: t.servicesPreview.services.webDev.features,
+    },
+    {
+      icon: 'phone_iphone',
+      title: t.servicesPreview.services.mobile.title,
+      description: t.servicesPreview.services.mobile.description,
+      features: t.servicesPreview.services.mobile.features,
+    },
+    {
+      icon: 'palette',
+      title: t.servicesPreview.services.design.title,
+      description: t.servicesPreview.services.design.description,
+      features: t.servicesPreview.services.design.features,
+    },
+    {
+      icon: 'speed',
+      title: t.servicesPreview.services.performance.title,
+      description: t.servicesPreview.services.performance.description,
+      features: t.servicesPreview.services.performance.features,
+    },
+  ]
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.badge}>
             <span className="material-symbols-outlined">build</span>
-            Servicii
+            {t.servicesPreview.badge}
           </div>
           <h2 className={styles.title}>
-            Ce putem construi <span className={styles.highlight}>împreună</span>
+            {t.servicesPreview.title} <span className={styles.highlight}>{t.servicesPreview.titleHighlight}</span>
           </h2>
           <p className={styles.subtitle}>
-            De la idee la lansare, oferim servicii complete pentru transformarea
-            viziunii tale în realitate digitală.
+            {t.servicesPreview.subtitle}
           </p>
         </div>
         <div className={styles.grid}>
@@ -70,7 +68,7 @@ function ServicesPreview() {
         </div>
         <div className={styles.cta}>
           <Link to="/servicii" className={styles.button}>
-            Vezi Toate Serviciile
+            {t.servicesPreview.cta}
             <span className="material-symbols-outlined">arrow_forward</span>
           </Link>
         </div>

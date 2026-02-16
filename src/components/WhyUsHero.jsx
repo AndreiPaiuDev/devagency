@@ -1,6 +1,9 @@
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './WhyUsHero.module.css'
 
 function WhyUsHero() {
+  const t = useTranslation()
+  
   return (
     <section className={styles.section}>
       <div className={styles.blurTop} />
@@ -9,12 +12,12 @@ function WhyUsHero() {
         <div className={styles.content}>
           <div className={styles.kicker}>
             <span className={styles.dot} />
-            Avantajele Noastre
+            {t.whyUsHero.badge}
           </div>
           <h1 className={styles.title}>
-            De ce să{' '}
+            {t.whyUsHero.title}{' '}
             <span className={styles.highlight}>
-              nu
+              {t.whyUsHero.titleHighlight}
               <svg
                 className={styles.underline}
                 preserveAspectRatio="none"
@@ -28,11 +31,10 @@ function WhyUsHero() {
                 />
               </svg>
             </span>{' '}
-            ne alegi pe noi?
+            {t.whyUsHero.titleEnd}
           </h1>
           <p className={styles.subtitle}>
-            (Glumim. Iată de ce suntem, de fapt, alegerea potrivită pentru
-            proiectul tău.)
+            {t.whyUsHero.subtitle}
           </p>
         </div>
       </div>

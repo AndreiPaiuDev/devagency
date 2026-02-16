@@ -1,6 +1,9 @@
+import { useTranslation } from '../hooks/useTranslation'
 import styles from './PortfolioHero.module.css'
 
 function PortfolioHero() {
+  const t = useTranslation()
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -8,16 +11,14 @@ function PortfolioHero() {
           <div className={styles.copy}>
             <div className={styles.kicker}>
               <span className={styles.ping} />
-              20+ Proiecte Livrate
+              {t.portfolioHero.badge}
             </div>
             <h1>
-              Proiectele Noastre: <br />
-              <span className={styles.highlight}>Rezultate Concrete</span>
+              {t.portfolioHero.title} <br />
+              <span className={styles.highlight}>{t.portfolioHero.titleHighlight}</span>
             </h1>
             <p>
-              Nu scriem doar cod, creștem afaceri. Iată cum am transformat
-              provocările tehnice ale clienților în victorii reale de business,
-              fără bullshit corporatist.
+              {t.portfolioHero.subtitle}
             </p>
           </div>
           <div className={styles.visual}>
@@ -30,9 +31,9 @@ function PortfolioHero() {
                     <span className="material-symbols-outlined">workspace_premium</span>
                   </div>
                   <div>
-                    <p className={styles.badgeTitle}>Rezultate Măsurabile</p>
+                    <p className={styles.badgeTitle}>{t.portfolioHero.badgeTitle}</p>
                     <p className={styles.badgeSubtitle}>
-                      Fiecare proiect cu impact real de business
+                      {t.portfolioHero.badgeSubtitle}
                     </p>
                   </div>
                 </div>

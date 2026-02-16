@@ -1,13 +1,13 @@
 .section {
   position: relative;
   width: 100%;
-  padding: 80px 16px;
+  padding: 80px 24px;
   background: linear-gradient(to bottom, #101d23, #0a1216);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section {
-    padding: 80px 80px;
+    padding: 80px 32px;
   }
 }
 
