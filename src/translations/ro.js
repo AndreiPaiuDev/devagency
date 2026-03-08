@@ -275,32 +275,54 @@ export const translations = {
     cta: 'Vezi Tot Portofoliul',
     projects: {
       scaleup: {
-        title: 'ScaleUp App',
-        category: 'SaaS Startup',
-        description: 'Portal self-service automatizat complet, cu tutoriale interactive.',
-        tags: ['React', 'Node.js', 'AWS'],
-        metric1: '40%',
-        metric2: 'Lower Churn'
+        title: 'Velaris Home',
+        category: 'Website Corporativ',
+        description: 'Website pentru un studio de design interior de lux din Londra, cu animații fluide, carusel full-page și consimțământ cookie GDPR.',
+        tags: ['React 19', 'Vite', 'JavaScript'],
+        metric1: '98%',
+        metric2: 'Lighthouse'
       },
       fashion: {
-        title: 'FashionHub',
-        category: 'E-commerce',
-        description: 'Migrare pe arhitectură cloud scalabilă (AWS) cu auto-scaling.',
-        tags: ['Next.js', 'AWS', 'PostgreSQL'],
-        metric1: '99.99%',
-        metric2: 'Uptime'
+        title: 'WeatherPro',
+        category: 'Aplicație Web',
+        description: 'Dashboard meteo modern, adaptiv la temă, cu date în timp real, prognoze pe 7 zile și design complet responsive.',
+        tags: ['React', 'JavaScript', 'REST API'],
+        metric1: 'Live',
+        metric2: '7 zile'
       },
-      payfast: {
-        title: 'PayFast Ro',
-        category: 'FinTech',
-        description: 'Refactorizare completă React & Node.js, microservicii.',
-        tags: ['React', 'Node.js', 'Microservices'],
-        metric1: '2x',
-        metric2: 'Viteză Dev'
-      }
+      chocolateWorld: {
+        title: 'Chocolate World',
+        category: 'E-commerce',
+        description: 'Design modern user-friendly cu imagini premium, navigare intuitivă și prezentare elegantă pentru un brand de ciocolată de lux.',
+        tags: ['HTML', 'E-commerce', 'JavaScript'],
+        metric1: '150%',
+        metric2: 'Vânzări'
+      },
+      dinails: {
+        title: 'Dinails UK',
+        category: 'Beauty & Lifestyle',
+        description: 'Website premium cu stil editorial pentru un salon de unghii din Londra, cu design de lux, contact WhatsApp și integrare Google Maps.',
+        tags: ['Next.js', 'JavaScript', 'Google Maps'],
+        metric1: '100%',
+        metric2: 'Static'
+      },
+      barbershop: {
+        title: 'Barbershop',
+        category: 'Beauty & Lifestyle',
+        description: 'O echipă care nu se mulțumește niciodată cu laurii — mereu pe aceeași lungime de undă cu clienții, gata să îmbunătățească pe oricine trece pragul.',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        metric1: '5★',
+        metric2: 'Rating'      },
+      webstudio: {
+        title: 'WebStudio',
+        category: 'Agenție Web',
+        description: 'Website corporativ curat cu servicii evidențiate pentru dezvoltare web, aplicații, design și soluții de marketing.',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        metric1: '100%',
+        metric2: 'Profesional'      }
     },
-    growth: 'Growth',
-    users: 'Users'
+    growth: '',
+    users: ''
   },
   
   // Testimonials
@@ -377,28 +399,60 @@ export const translations = {
   portfolioGrid: {
     projects: {
       scaleup: {
-        title: 'ScaleUp App',
-        category: 'SaaS Startup',
-        challenge: 'Onboarding manual ineficient care bloca creșterea și frustra utilizatorii.',
-        solution: 'Portal self-service automatizat complet, cu tutoriale interactive.',
-        metric: '40%',
-        metricLabel: 'Lower Churn'
+        title: 'Velaris Home',
+        category: 'Website Corporativ',
+        challenge: 'Aveau nevoie de o prezență digitală premium care să reflecte un brand de lux din Londra.',
+        solution: 'Site React 19 + Vite cu animații scroll, carusel full-page și consimțământ cookie GDPR.',
+        metric: '98%',
+        metricLabel: 'Lighthouse'
       },
       fashion: {
-        title: 'FashionHub',
-        category: 'E-commerce',
-        challenge: 'Site picat de Black Friday din cauza traficului imens neanticipat.',
-        solution: 'Migrare pe arhitectură cloud scalabilă (AWS) cu auto-scaling.',
-        metric: '99.99%',
-        metricLabel: 'Uptime'
+        title: 'WeatherPro',
+        category: 'Aplicație Web',
+        challenge: 'Aplicațiile meteo existente erau aglomerate, lente și fără o interfață modernă adaptivă.',
+        solution: 'Dashboard React cu integrare REST API în timp real, comutare de temă și layout-uri responsive.',
+        metric: '7 zile',
+        metricLabel: 'Prognoză'
       },
       payfast: {
         title: 'PayFast Ro',
         category: 'FinTech',
         challenge: 'Cod legacy lent, greu de întreținut, cu bug-uri frecvente la plăți.',
-        solution: 'Refactorizare completă React & Node.js, microservicii.',
+        solution: 'Refactorizare completă React & Node.js cu arhitectură de microservicii.',
         metric: '2x',
         metricLabel: 'Viteză Dev'
+      },
+      chocolateWorld: {
+        title: 'Chocolate World',
+        category: 'E-commerce',
+        challenge: 'Un brand românesc de ciocolată de lux avea nevoie de o experiență digitală immersivă pentru produsele artizanale.',
+        solution: 'Design modern user-friendly cu imagini premium, navigare intuitivă și prezentare elegantă a gamei de produse.',
+        metric: '150%',
+        metricLabel: 'Vânzări Online'
+      },
+      dinails: {
+        title: 'Dinails UK',
+        category: 'Beauty & Lifestyle',
+        challenge: 'Aveau nevoie de o prezență digitală premium pentru un salon de unghii din Londra cu brand editorial de lux.',
+        solution: 'Site Next.js cu hero full-width, contact WhatsApp, integrare Google Maps și deployment static.',
+        metric: '100%',
+        metricLabel: 'Static'
+      },
+      barbershop: {
+        title: 'Barbershop',
+        category: 'Beauty & Lifestyle',
+        challenge: 'Aveau nevoie de o prezență online puternică pentru un frizerie care reflectă măiestria și o cultură axată pe client.',
+        solution: 'Website modern cu vizuale puternice, UX fluid și un design care reflectă pasiunea echipei pentru meserie.',
+        metric: '5★',
+        metricLabel: 'Rating'
+      },
+      webstudio: {
+        title: 'WebStudio',
+        category: 'Agenție Web',
+        challenge: 'O agenție digitală avea nevoie de o platformă profesională pentru serviciile lor de dezvoltare web, aplicații, design și marketing.',
+        solution: 'Website corporativ curat cu servicii evidențiate, mesaje de soluții eficiente pentru afaceri și call-to-action clare.',
+        metric: '100%',
+        metricLabel: 'Profesional'
       }
     }
   },

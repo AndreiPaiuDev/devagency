@@ -55,7 +55,7 @@ function Hero({ dark = false }) {
                 <img
                   src="/hero-card.webp"
                   alt=""
-                  fetchpriority="high"
+                  fetchPriority="high"
                   className={styles.cardBg}
                 />
                 <div className={styles.overlay} />

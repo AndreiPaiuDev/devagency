@@ -275,32 +275,56 @@ export const translations = {
     cta: 'View Full Portfolio',
     projects: {
       scaleup: {
-        title: 'ScaleUp App',
-        category: 'SaaS Startup',
-        description: 'Fully automated self-service portal with interactive tutorials.',
-        tags: ['React', 'Node.js', 'AWS'],
-        metric1: '40%',
-        metric2: 'Lower Churn'
+        title: 'Velaris Home',
+        category: 'Corporate Website',
+        description: 'Luxury interior design studio website with smooth scroll animations, full-page image carousel, and GDPR-compliant cookie consent.',
+        tags: ['React 19', 'Vite', 'JavaScript'],
+        metric1: '98%',
+        metric2: 'Lighthouse'
       },
       fashion: {
-        title: 'FashionHub',
-        category: 'E-commerce',
-        description: 'Migration to scalable cloud architecture (AWS) with auto-scaling.',
-        tags: ['Next.js', 'AWS', 'PostgreSQL'],
-        metric1: '99.99%',
-        metric2: 'Uptime'
+        title: 'WeatherPro',
+        category: 'Web Application',
+        description: 'Sleek, theme-adaptive weather dashboard with real-time data, 7-day forecasts, and full responsive design.',
+        tags: ['React', 'JavaScript', 'REST API'],
+        metric1: 'Live',
+        metric2: '7-day'
       },
       payfast: {
-        title: 'PayFast Ro',
-        category: 'FinTech',
-        description: 'Complete React & Node.js refactoring, microservices.',
-        tags: ['React', 'Node.js', 'Microservices'],
-        metric1: '2x',
-        metric2: 'Dev Speed'
+        title: 'Chocolate World',
+        category: 'E-commerce',
+        description: 'Modern user-friendly design with premium imagery, intuitive navigation, and elegant product showcase for a luxury chocolate brand.',
+        tags: ['HTML', 'E-commerce', 'Premium'],
+        metric1: '150%',
+        metric2: 'Sales'
+      },
+      dinails: {
+        title: 'Dinails UK',
+        category: 'Beauty & Lifestyle',
+        description: 'Premium editorial-style website for a London nail studio with luxury design, WhatsApp contact, and Google Maps integration.',
+        tags: ['Next.js', 'JavaScript', 'Google Maps'],
+        metric1: '100%',
+        metric2: 'Static'
+      },
+      barbershop: {
+        title: 'Barbershop',
+        category: 'Beauty & Lifestyle',
+        description: 'A team that never rests on its laurels — always on the same wavelength with clients, ready to improve everyone who walks through the door.',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        metric1: '5★',
+        metric2: 'Rating'
+      },
+      webstudio: {
+        title: 'WebStudio',
+        category: 'Web Agency',
+        description: 'Clean corporate website with service highlights for web development, apps, design, and marketing solutions.',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        metric1: '100%',
+        metric2: 'Professional'
       }
     },
-    growth: 'Growth',
-    users: 'Users'
+    growth: '',
+    users: ''
   },
   
   // Testimonials
@@ -377,28 +401,60 @@ export const translations = {
   portfolioGrid: {
     projects: {
       scaleup: {
-        title: 'ScaleUp App',
-        category: 'SaaS Startup',
-        challenge: 'Inefficient manual onboarding blocking growth and frustrating users.',
-        solution: 'Fully automated self-service portal with interactive tutorials.',
-        metric: '40%',
-        metricLabel: 'Lower Churn'
+        title: 'Velaris Home',
+        category: 'Corporate Website',
+        challenge: 'Needed a premium digital presence reflecting a luxury London interior design brand.',
+        solution: 'React 19 + Vite site with smooth scroll animations, full-page carousel, and GDPR cookie consent.',
+        metric: '98%',
+        metricLabel: 'Lighthouse'
       },
       fashion: {
-        title: 'FashionHub',
-        category: 'E-commerce',
-        challenge: 'Site crashed on Black Friday due to huge unanticipated traffic.',
-        solution: 'Migration to scalable cloud architecture (AWS) with auto-scaling.',
-        metric: '99.99%',
-        metricLabel: 'Uptime'
+        title: 'WeatherPro',
+        category: 'Web App',
+        challenge: 'Existing weather tools were cluttered, slow, and lacked a modern adaptive UI.',
+        solution: 'React dashboard with real-time REST API integration, theme switching, and responsive layouts.',
+        metric: '7-day',
+        metricLabel: 'Forecast'
       },
       payfast: {
         title: 'PayFast Ro',
         category: 'FinTech',
         challenge: 'Slow legacy code, hard to maintain, with frequent payment bugs.',
-        solution: 'Complete React & Node.js refactoring, microservices.',
+        solution: 'Complete React & Node.js refactoring with microservices architecture.',
         metric: '2x',
         metricLabel: 'Dev Speed'
+      },
+      chocolateWorld: {
+        title: 'Chocolate World',
+        category: 'E-commerce',
+        challenge: 'A luxury Romanian chocolate brand needed an immersive digital experience to showcase artisan products.',
+        solution: 'Modern user-friendly design with premium imagery, intuitive navigation, and elegant product showcase.',
+        metric: '150%',
+        metricLabel: 'Online Sales'
+      },
+      dinails: {
+        title: 'Dinails UK',
+        category: 'Beauty & Lifestyle',
+        challenge: 'Needed a premium digital presence for a London nail studio that reflects a luxury, editorial brand.',
+        solution: 'Next.js site with full-width hero, WhatsApp contact, Google Maps integration, and static deployment.',
+        metric: '100%',
+        metricLabel: 'Static'
+      },
+      barbershop: {
+        title: 'Barbershop',
+        category: 'Beauty & Lifestyle',
+        challenge: 'Needed a bold online presence for a barbershop that reflects mastery and a strong client-first culture.',
+        solution: 'Modern website with striking visuals, smooth UX, and a design that mirrors the team\'s passion for their craft.',
+        metric: '5★',
+        metricLabel: 'Rating'
+      },
+      webstudio: {
+        title: 'WebStudio',
+        category: 'Web Agency',
+        challenge: 'A digital agency needed a professional showcase platform for their services in web development, apps, design, and marketing.',
+        solution: 'Clean corporate website with service highlights, effective business solutions messaging, and clear call-to-actions.',
+        metric: '100%',
+        metricLabel: 'Professional'
       }
     }
   },

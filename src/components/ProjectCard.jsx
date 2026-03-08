@@ -5,6 +5,7 @@ function ProjectCard({
   category,
   icon,
   image,
+  url,
   challenge,
   solution,
   metric,
@@ -55,11 +56,13 @@ function ProjectCard({
           </p>
         </div>
       </div>
-      <div className={styles.arrow}>
-        <button className={styles.arrowButton}>
-          <span className="material-symbols-outlined">arrow_forward</span>
-        </button>
-      </div>
+      {url && (
+        <div className={styles.arrow}>
+          <a href={url} target="_blank" rel="noopener noreferrer" className={styles.arrowButton} aria-label={`Visit ${title}`}>
+            <span className="material-symbols-outlined">open_in_new</span>
+          </a>
+        </div>
+      )}
     </div>
   )
 }

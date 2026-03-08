@@ -9,39 +9,38 @@ function PortfolioPreview() {
     {
       title: t.portfolioPreview.projects.scaleup.title,
       category: t.portfolioPreview.projects.scaleup.category,
+      image: '/projects/velarishome.png',
+      url: 'https://velarishome.vercel.app/',
       description: t.portfolioPreview.projects.scaleup.description,
-      image:
-        '/images/project-scaleup.jpg',
       tags: t.portfolioPreview.projects.scaleup.tags,
-      stats: { 
-        metric1: t.portfolioPreview.projects.scaleup.metric1, 
-        metric2: t.portfolioPreview.projects.scaleup.metric2 
-      },
+      stats: {
+        metric1: t.portfolioPreview.projects.scaleup.metric1,
+        metric2: t.portfolioPreview.projects.scaleup.metric2
+      }
     },
     {
       title: t.portfolioPreview.projects.fashion.title,
       category: t.portfolioPreview.projects.fashion.category,
+      image: '/projects/weatherpro.png',
+      url: 'https://weatherpro-ro.vercel.app/',
       description: t.portfolioPreview.projects.fashion.description,
-      image:
-        '/images/project-fashion.jpg',
       tags: t.portfolioPreview.projects.fashion.tags,
-      stats: { 
-        metric1: t.portfolioPreview.projects.fashion.metric1, 
-        metric2: t.portfolioPreview.projects.fashion.metric2 
-      },
+      stats: {
+        metric1: t.portfolioPreview.projects.fashion.metric1,
+        metric2: t.portfolioPreview.projects.fashion.metric2
+      }
     },
     {
-      title: t.portfolioPreview.projects.payfast.title,
-      category: t.portfolioPreview.projects.payfast.category,
-      description: t.portfolioPreview.projects.payfast.description,
-      image:
-        '/images/project-payfast.jpg',
-      tags: t.portfolioPreview.projects.payfast.tags,
-      stats: { 
-        metric1: t.portfolioPreview.projects.payfast.metric1, 
-        metric2: t.portfolioPreview.projects.payfast.metric2 
-      },
-    },
+      title: t.portfolioPreview.projects.chocolateWorld.title,
+      category: t.portfolioPreview.projects.chocolateWorld.category,
+      image: '/projects/chocolateworld.png',
+      description: t.portfolioPreview.projects.chocolateWorld.description,
+      tags: t.portfolioPreview.projects.chocolateWorld.tags,
+      stats: {
+        metric1: t.portfolioPreview.projects.chocolateWorld.metric1,
+        metric2: t.portfolioPreview.projects.chocolateWorld.metric2
+      }
+    }
   ]
   
   return (
