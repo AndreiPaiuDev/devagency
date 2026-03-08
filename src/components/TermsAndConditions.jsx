@@ -1,12 +1,198 @@
+import { useLanguage } from '../contexts/LanguageContext'
+
 function TermsAndConditions() {
+  const { language } = useLanguage()
+
+  if (language === 'en') {
+    return (
+      <>
+        <p><strong>Last updated:</strong> February 16, 2026</p>
+
+        <h3>1. Introduction</h3>
+        <p>
+          Welcome to DevAgency. By accessing and using our website, services and applications,
+          you agree to these Terms and Conditions. If you do not agree with these terms,
+          please do not use our services.
+        </p>
+
+        <h3>2. Definitions</h3>
+        <ul>
+          <li><strong>"Services"</strong> – all services offered by DevAgency, including but not limited to web development, mobile applications, UI/UX design and IT consulting</li>
+          <li><strong>"Client"</strong> – any individual or legal entity using our services</li>
+          <li><strong>"Platform"</strong> – the website, applications and all digital media of DevAgency</li>
+          <li><strong>"Content"</strong> – text, images, code, design and other materials provided through the platform</li>
+        </ul>
+
+        <h3>3. Acceptance of Terms</h3>
+        <p>By using our services, you confirm that you:</p>
+        <ul>
+          <li>Have full legal capacity to enter into contracts</li>
+          <li>Have read and understood these terms</li>
+          <li>Agree to comply with applicable laws in Romania and the EU</li>
+          <li>Provide accurate and up-to-date information</li>
+        </ul>
+
+        <h3>4. Services Provided</h3>
+        <p>DevAgency offers the following services:</p>
+        <ul>
+          <li>Custom web application development</li>
+          <li>Mobile application development (iOS, Android)</li>
+          <li>UI/UX design and prototyping</li>
+          <li>Technical and strategic consulting</li>
+          <li>Maintenance and technical support</li>
+        </ul>
+        <p>We reserve the right to modify, suspend or discontinue any service without prior notice.</p>
+
+        <h3>5. Order and Contract Process</h3>
+        <ul>
+          <li>Client submits a request via the contact form or email</li>
+          <li>DevAgency reviews the request and provides a quote within 3 business days</li>
+          <li>Upon acceptance of the quote, a specific service contract is concluded</li>
+          <li>The contract becomes valid upon signature by both parties</li>
+          <li>Delivery is made according to the timelines set out in the contract</li>
+        </ul>
+
+        <h3>6. Pricing and Payments</h3>
+        <ul>
+          <li>All prices are expressed in RON or EUR and include VAT in accordance with Romanian legislation</li>
+          <li>Prices may vary depending on the complexity of the project</li>
+          <li>Payment is made according to the schedule established in the contract (typically: 50% upfront, remainder upon delivery)</li>
+          <li>Accepted payment methods: bank transfer, credit/debit card</li>
+          <li>Tax invoices are issued in accordance with the Romanian Tax Code</li>
+          <li>Late payment may incur penalties as set out in the contract</li>
+        </ul>
+
+        <h3>7. Intellectual Property</h3>
+        <p>
+          <strong>7.1 Code Ownership</strong><br />
+          Upon full payment, the source code and deliverables become the property of the client,
+          with the exception of reusable components and open-source libraries.
+        </p>
+        <p>
+          <strong>7.2 Licences</strong><br />
+          DevAgency reserves the right to use the knowledge and techniques developed
+          in projects, without disclosing confidential client information.
+        </p>
+        <p>
+          <strong>7.3 DevAgency Property</strong><br />
+          The DevAgency name, logo and marketing materials remain the exclusive property
+          of the company and are protected by Romanian copyright law.
+        </p>
+
+        <h3>8. Confidentiality</h3>
+        <p>
+          Both parties undertake to maintain the confidentiality of information received during
+          the collaboration. For more details, please see the Privacy Policy.
+        </p>
+
+        <h3>9. Client Obligations</h3>
+        <ul>
+          <li>Timely provision of necessary materials and information</li>
+          <li>Clear communication of requirements and prompt feedback</li>
+          <li>Compliance with payment deadlines</li>
+          <li>Legal use of delivered services and products</li>
+          <li>Non-disclosure of confidential information received from DevAgency</li>
+        </ul>
+
+        <h3>10. DevAgency Obligations</h3>
+        <ul>
+          <li>Delivery of services in accordance with agreed specifications</li>
+          <li>Compliance with the timelines set out in the contract</li>
+          <li>Ensuring the quality and functionality of solutions</li>
+          <li>Technical support as per the contract terms</li>
+          <li>Protection of personal data in accordance with GDPR</li>
+        </ul>
+
+        <h3>11. Warranties and Liabilities</h3>
+        <p>
+          <strong>11.1 Warranty</strong><br />
+          DevAgency provides a 30-day warranty period for functional defects,
+          starting from the date of final acceptance of the project.
+        </p>
+        <p>
+          <strong>11.2 Limitations</strong><br />
+          DevAgency is not liable for:
+        </p>
+        <ul>
+          <li>Indirect damages or loss of profit</li>
+          <li>Issues caused by unauthorised modifications to the code</li>
+          <li>Unavailability of third-party servers or external services</li>
+          <li>Improper use of delivered products</li>
+        </ul>
+
+        <h3>12. Force Majeure</h3>
+        <p>
+          Neither party shall be liable for failure to fulfil contractual obligations due to
+          force majeure events (natural disasters, wars, pandemics, major legislative changes, etc.)
+          in accordance with the Romanian Civil Code.
+        </p>
+
+        <h3>13. Contract Termination</h3>
+        <ul>
+          <li>The contract may be terminated by mutual agreement between the parties</li>
+          <li>The client may terminate with 15 days' written notice</li>
+          <li>DevAgency may terminate in the event of non-payment or serious breach of terms</li>
+          <li>Upon termination, the client owes payment for services rendered up to that point</li>
+        </ul>
+
+        <h3>14. Right of Withdrawal</h3>
+        <p>
+          In accordance with applicable consumer protection regulations, consumers (individuals)
+          have the right to withdraw within 14 days of concluding the contract, unless the
+          services have begun with the consumer's explicit consent.
+        </p>
+
+        <h3>15. Dispute Resolution</h3>
+        <ul>
+          <li>The parties will attempt to resolve any disputes amicably</li>
+          <li>In the event of disagreement, disputes shall be resolved by the competent courts in Romania</li>
+          <li>Romanian law and applicable EU directives apply</li>
+          <li>Consumers may use the ODR platform (online dispute resolution): ec.europa.eu/consumers/odr</li>
+        </ul>
+
+        <h3>16. Personal Data Protection</h3>
+        <p>
+          The processing of personal data is carried out in accordance with Regulation (EU) 2016/679 (GDPR)
+          and applicable national legislation. For more information, please see the Privacy Policy.
+        </p>
+
+        <h3>17. Changes to Terms</h3>
+        <p>
+          DevAgency reserves the right to modify these terms at any time.
+          Changes will be communicated by email or on the website. Continued use of
+          services after changes constitutes acceptance of the new terms.
+        </p>
+
+        <h3>18. General Provisions</h3>
+        <ul>
+          <li>If any clause becomes void, the remaining terms remain valid</li>
+          <li>These terms represent the entire agreement between the parties</li>
+          <li>Any amendments must be made in writing and signed by both parties</li>
+        </ul>
+
+        <h3>19. Contact Details</h3>
+        <p>For questions regarding these terms, you can contact us at:</p>
+        <ul>
+          <li><strong>Email:</strong> andreipaiudev@gmail.com</li>
+          <li><strong>Phone:</strong> +44 7367 438 601</li>
+        </ul>
+
+        <p style={{ marginTop: '32px', fontSize: '0.875rem', color: '#6b8998' }}>
+          By using DevAgency's services, you confirm that you have read, understood and accepted
+          these Terms and Conditions in their entirety.
+        </p>
+      </>
+    )
+  }
+
   return (
     <>
       <p><strong>Data ultimei actualizări:</strong> 16 februarie 2026</p>
 
       <h3>1. Introducere</h3>
       <p>
-        Bine ați venit la DevAgency. Prin accesarea și utilizarea site-ului nostru web, 
-        a serviciilor și aplicațiilor noastre, sunteți de acord cu prezentele Termeni și Condiții. 
+        Bine ați venit la DevAgency. Prin accesarea și utilizarea site-ului nostru web,
+        a serviciilor și aplicațiilor noastre, sunteți de acord cu prezentele Termeni și Condiții.
         Dacă nu sunteți de acord cu acești termeni, vă rugăm să nu utilizați serviciile noastre.
       </p>
 
@@ -19,9 +205,7 @@ function TermsAndConditions() {
       </ul>
 
       <h3>3. Acceptarea Termenilor</h3>
-      <p>
-        Prin utilizarea serviciilor noastre, confirmați că:
-      </p>
+      <p>Prin utilizarea serviciilor noastre, confirmați că:</p>
       <ul>
         <li>Aveți capacitate legală deplină de a încheia contracte</li>
         <li>Ați citit și înțeles acești termeni</li>
@@ -30,9 +214,7 @@ function TermsAndConditions() {
       </ul>
 
       <h3>4. Servicii Oferite</h3>
-      <p>
-        DevAgency oferă următoarele servicii:
-      </p>
+      <p>DevAgency oferă următoarele servicii:</p>
       <ul>
         <li>Dezvoltare de aplicații web personalizate</li>
         <li>Dezvoltare de aplicații mobile (iOS, Android)</li>
@@ -40,9 +222,7 @@ function TermsAndConditions() {
         <li>Consultanță tehnică și strategică</li>
         <li>Mentenanță și suport tehnic</li>
       </ul>
-      <p>
-        Ne rezervăm dreptul de a modifica, suspenda sau întrerupe orice serviciu fără notificare prealabilă.
-      </p>
+      <p>Ne rezervăm dreptul de a modifica, suspenda sau întrerupe orice serviciu fără notificare prealabilă.</p>
 
       <h3>5. Procesul de Comandă și Contractare</h3>
       <ul>
@@ -66,23 +246,23 @@ function TermsAndConditions() {
       <h3>7. Proprietate Intelectuală</h3>
       <p>
         <strong>7.1 Drepturi asupra Codului</strong><br />
-        După plata integrală, codul sursa și livrabilele devin proprietatea clientului, 
+        După plata integrală, codul sursa și livrabilele devin proprietatea clientului,
         cu excepția componentelor reutilizabile și librăriilor open-source.
       </p>
       <p>
         <strong>7.2 Licențe</strong><br />
-        DevAgency își rezervă dreptul de a utiliza cunoștințele și tehnicile dezvoltate 
+        DevAgency își rezervă dreptul de a utiliza cunoștințele și tehnicile dezvoltate
         în proiecte, fără a dezvălui informații confidențiale ale clientului.
       </p>
       <p>
         <strong>7.3 Proprietatea DevAgency</strong><br />
-        Numele, logo-ul și materialele de marketing DevAgency rămân proprietatea exclusivă 
+        Numele, logo-ul și materialele de marketing DevAgency rămân proprietatea exclusivă
         a companiei și sunt protejate de legile drepturilor de autor din România.
       </p>
 
       <h3>8. Confidențialitate</h3>
       <p>
-        Ambele părți se angajează să păstreze confidențialitatea informațiilor primite în 
+        Ambele părți se angajează să păstreze confidențialitatea informațiilor primite în
         timpul colaborării. Pentru mai multe detalii, consultați Politica de Confidențialitate.
       </p>
 
@@ -107,7 +287,7 @@ function TermsAndConditions() {
       <h3>11. Garanții și Responsabilități</h3>
       <p>
         <strong>11.1 Garanție</strong><br />
-        DevAgency oferă o perioadă de garanție de 30 de zile pentru defecte de funcționare, 
+        DevAgency oferă o perioadă de garanție de 30 de zile pentru defecte de funcționare,
         începând de la data acceptării finale a proiectului.
       </p>
       <p>
@@ -123,8 +303,8 @@ function TermsAndConditions() {
 
       <h3>12. Forță Majoră</h3>
       <p>
-        Niciuna dintre părți nu va fi responsabilă pentru neîndeplinirea obligațiilor 
-        contractuale din cauza evenimentelor de forță majoră (calamități naturale, 
+        Niciuna dintre părți nu va fi responsabilă pentru neîndeplinirea obligațiilor
+        contractuale din cauza evenimentelor de forță majoră (calamități naturale,
         războaie, pandemii, modificări legislative majore, etc.) conform Codului Civil român.
       </p>
 
@@ -138,8 +318,8 @@ function TermsAndConditions() {
 
       <h3>14. Drept de Retragere</h3>
       <p>
-        Conform OUG 34/2014, consumatorii (persoane fizice) au dreptul de retragere în 
-        termen de 14 zile de la încheierea contractului, cu excepția cazului în care 
+        Conform OUG 34/2014, consumatorii (persoane fizice) au dreptul de retragere în
+        termen de 14 zile de la încheierea contractului, cu excepția cazului în care
         serviciile au început să fie prestate cu acordul explicit al consumatorului.
       </p>
 
@@ -153,14 +333,14 @@ function TermsAndConditions() {
 
       <h3>16. Protecția Datelor cu Caracter Personal</h3>
       <p>
-        Prelucrarea datelor personale se realizează conform Regulamentului (UE) 2016/679 (GDPR) 
+        Prelucrarea datelor personale se realizează conform Regulamentului (UE) 2016/679 (GDPR)
         și Legii 190/2018. Pentru mai multe informații, consultați Politica de Confidențialitate.
       </p>
 
       <h3>17. Modificări ale Termenilor</h3>
       <p>
-        DevAgency își rezervă dreptul de a modifica acești termeni în orice moment. 
-        Modificările vor fi comunicate prin email sau pe site. Utilizarea continuă a 
+        DevAgency își rezervă dreptul de a modifica acești termeni în orice moment.
+        Modificările vor fi comunicate prin email sau pe site. Utilizarea continuă a
         serviciilor după modificări constituie acceptarea noilor termeni.
       </p>
 
@@ -172,16 +352,14 @@ function TermsAndConditions() {
       </ul>
 
       <h3>19. Date de Contact</h3>
-      <p>
-        Pentru întrebări referitoare la acești termeni, ne puteți contacta la:
-      </p>
+      <p>Pentru întrebări referitoare la acești termeni, ne puteți contacta la:</p>
       <ul>
         <li><strong>Email:</strong> andreipaiudev@gmail.com</li>
         <li><strong>Telefon:</strong> +44 7367 438 601</li>
       </ul>
 
       <p style={{ marginTop: '32px', fontSize: '0.875rem', color: '#6b8998' }}>
-        Prin utilizarea serviciilor DevAgency, confirmați că ați citit, înțeles și acceptat 
+        Prin utilizarea serviciilor DevAgency, confirmați că ați citit, înțeles și acceptat
         acești Termeni și Condiții în integralitatea lor.
       </p>
     </>

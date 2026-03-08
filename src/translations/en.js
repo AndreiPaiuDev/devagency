@@ -349,6 +349,7 @@ export const translations = {
     copyright: 'DevAgency. All rights reserved.',
     terms: 'Terms and Conditions',
     privacy: 'Privacy Policy',
+    cookies: 'Cookies Policy',
     services: {
       webDev: 'Web Development',
       mobile: 'Mobile Apps',

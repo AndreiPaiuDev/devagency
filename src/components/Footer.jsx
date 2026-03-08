@@ -4,11 +4,13 @@ import { useTranslation } from '../hooks/useTranslation'
 import Modal from './Modal'
 import TermsAndConditions from './TermsAndConditions'
 import PrivacyPolicy from './PrivacyPolicy'
+import CookiesPolicy from './CookiesPolicy'
 import styles from './Footer.module.css'
 
 function Footer() {
   const [isTermsOpen, setIsTermsOpen] = useState(false)
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false)
+  const [isCookiesOpen, setIsCookiesOpen] = useState(false)
   const t = useTranslation()
 
   return (
@@ -81,6 +83,9 @@ function Footer() {
               <button onClick={() => setIsPrivacyOpen(true)}>
                 {t.footer.privacy}
               </button>
+              <button onClick={() => setIsCookiesOpen(true)}>
+                {t.footer.cookies}
+              </button>
             </div>
           </div>
         </div>
@@ -94,12 +99,20 @@ function Footer() {
         <TermsAndConditions />
       </Modal>
 
-      <Modal 
-        isOpen={isPrivacyOpen} 
+      <Modal
+        isOpen={isPrivacyOpen}
         onClose={() => setIsPrivacyOpen(false)}
         title={t.footer.privacy}
       >
         <PrivacyPolicy />
+      </Modal>
+
+      <Modal
+        isOpen={isCookiesOpen}
+        onClose={() => setIsCookiesOpen(false)}
+        title={t.footer.cookies}
+      >
+        <CookiesPolicy />
       </Modal>
     </>
   )

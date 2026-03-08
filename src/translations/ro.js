@@ -349,6 +349,7 @@ export const translations = {
     copyright: 'DevAgency. Toate drepturile rezervate.',
     terms: 'Termeni și Condiții',
     privacy: 'Politica de Confidențialitate',
+    cookies: 'Politica de Cookie-uri',
     services: {
       webDev: 'Dezvoltare Web',
       mobile: 'Aplicații Mobile',
