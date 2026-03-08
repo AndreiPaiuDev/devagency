@@ -7,42 +7,42 @@ function TestimonialsSection() {
   
   const testimonials = [
     {
-      name: t.testimonials.items.alex.name,
-      role: t.testimonials.items.alex.role,
+      name: t.testimonials.items.velaris.name,
+      role: t.testimonials.items.velaris.role,
       image:
         '/images/avatar-alex.jpg',
-      problem: t.testimonials.items.alex.problem,
-      liked: t.testimonials.items.alex.liked,
-      result: t.testimonials.items.alex.result,
+      problem: t.testimonials.items.velaris.problem,
+      liked: t.testimonials.items.velaris.liked,
+      result: t.testimonials.items.velaris.result,
       tags: [
-        { icon: 'thumb_up', label: t.testimonials.items.alex.tag1 },
-        { icon: 'domain', label: t.testimonials.items.alex.tag2 },
+        { icon: 'thumb_up', label: t.testimonials.items.velaris.tag1 },
+        { icon: 'home', label: t.testimonials.items.velaris.tag2 },
       ],
     },
     {
-      name: t.testimonials.items.elena.name,
-      role: t.testimonials.items.elena.role,
-      image:
-        '/images/avatar-elena.jpg',
-      problem: t.testimonials.items.elena.problem,
-      liked: t.testimonials.items.elena.liked,
-      result: t.testimonials.items.elena.result,
-      tags: [
-        { icon: 'thumb_up', label: t.testimonials.items.elena.tag1 },
-        { icon: 'shopping_cart', label: t.testimonials.items.elena.tag2 },
-      ],
-    },
-    {
-      name: t.testimonials.items.mihai.name,
-      role: t.testimonials.items.mihai.role,
+      name: t.testimonials.items.chocolateWorld.name,
+      role: t.testimonials.items.chocolateWorld.role,
       image:
         '/images/avatar-mihai.jpg',
-      problem: t.testimonials.items.mihai.problem,
-      liked: t.testimonials.items.mihai.liked,
-      result: t.testimonials.items.mihai.result,
+      problem: t.testimonials.items.chocolateWorld.problem,
+      liked: t.testimonials.items.chocolateWorld.liked,
+      result: t.testimonials.items.chocolateWorld.result,
       tags: [
-        { icon: 'thumb_up', label: t.testimonials.items.mihai.tag1 },
-        { icon: 'build', label: t.testimonials.items.mihai.tag2 },
+        { icon: 'thumb_up', label: t.testimonials.items.chocolateWorld.tag1 },
+        { icon: 'shopping_cart', label: t.testimonials.items.chocolateWorld.tag2 },
+      ],
+    },
+    {
+      name: t.testimonials.items.dinails.name,
+      role: t.testimonials.items.dinails.role,
+      image:
+        '/images/avatar-elena.jpg',
+      problem: t.testimonials.items.dinails.problem,
+      liked: t.testimonials.items.dinails.liked,
+      result: t.testimonials.items.dinails.result,
+      tags: [
+        { icon: 'thumb_up', label: t.testimonials.items.dinails.tag1 },
+        { icon: 'phone_iphone', label: t.testimonials.items.dinails.tag2 },
       ],
     },
   ]

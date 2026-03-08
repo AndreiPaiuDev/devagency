@@ -298,6 +298,14 @@ export const translations = {
         metric1: '150%',
         metric2: 'Sales'
       },
+      chocolateWorld: {
+        title: 'Chocolate World',
+        category: 'E-commerce',
+        description: 'Modern user-friendly design with premium imagery, intuitive navigation, and elegant product showcase for a luxury chocolate brand.',
+        tags: ['HTML', 'E-commerce', 'Premium'],
+        metric1: '150%',
+        metric2: 'Sales'
+      },
       dinails: {
         title: 'Dinails UK',
         category: 'Beauty & Lifestyle',
@@ -334,32 +342,32 @@ export const translations = {
     titleHighlight: 'Listen to them.',
     subtitle: 'The people behind the companies we work with are our best business card. No corporate speak, just stories about problems solved.',
     items: {
-      alex: {
-        name: 'Alex Popescu',
-        role: 'CEO @ TechFlow',
-        problem: 'Legacy code slowing down development of new features.',
-        liked: 'Total transparency and weekly agile sprints.',
-        result: 'Complete MVP launched in just 3 months.',
-        tag1: 'MVP Launched',
-        tag2: 'SaaS'
+      velaris: {
+        name: 'George Mitchell',
+        role: 'CEO @ Velaris Home',
+        problem: 'Outdated real estate platform losing clients to competitors.',
+        liked: 'Modern UI design and seamless property search experience.',
+        result: '3x more property inquiries in the first quarter.',
+        tag1: '3x Inquiries',
+        tag2: 'Real Estate'
       },
-      elena: {
-        name: 'Elena Radu',
-        role: 'Manager @ ShopSmart',
-        problem: 'Low conversion rate on mobile devices.',
-        liked: 'Obsessive focus on UX and creative solutions proposed.',
-        result: '+40% mobile checkout in the first month.',
-        tag1: '+40% Conversion',
+      chocolateWorld: {
+        name: 'Marcel Constantin',
+        role: 'Owner @ Chocolate World',
+        problem: 'Premium chocolate sales limited to physical store only.',
+        liked: 'Beautiful product presentation and smooth checkout flow.',
+        result: '150% sales increase with online expansion.',
+        tag1: '150% Sales',
         tag2: 'E-commerce'
       },
-      mihai: {
-        name: 'Mihai Ionescu',
-        role: 'Director @ AdVantage',
-        problem: 'Urgent need for a custom internal reporting tool.',
-        liked: 'Direct communication, no corporate BS.',
-        result: 'Over 20 hours/week saved through automation.',
-        tag1: '20h Saved',
-        tag2: 'Internal Tool'
+      dinails: {
+        name: 'Delia Rotundu',
+        role: 'Founder @ Dinails UK',
+        problem: 'Manual booking system causing scheduling conflicts.',
+        liked: 'Intuitive mobile app and automated reminders.',
+        result: '85% reduction in no-shows and double bookings.',
+        tag1: '85% Less No-shows',
+        tag2: 'Mobile App'
       }
     }
   },

@@ -332,32 +332,32 @@ export const translations = {
     titleHighlight: 'Ascultă-i pe ei.',
     subtitle: 'Oamenii din spatele companiilor cu care lucrăm sunt cea mai bună carte de vizită a noastră. Fără corporate speak, doar povești despre probleme rezolvate.',
     items: {
-      alex: {
-        name: 'Alex Popescu',
-        role: 'CEO @ TechFlow',
-        problem: 'Cod vechi (legacy) care ne încetinea dezvoltarea de noi feature-uri.',
-        liked: 'Transparența totală și sprint-urile agile săptămânale.',
-        result: 'MVP complet lansat pe piață în doar 3 luni.',
-        tag1: 'MVP Lansat',
-        tag2: 'SaaS'
+      velaris: {
+        name: 'George Mitchell',
+        role: 'CEO @ Velaris Home',
+        problem: 'Platformă imobiliară învechită care ne pierdea clienți în favoarea competitorilor.',
+        liked: 'Design modern și experiență fluidă de căutare proprietăți.',
+        result: '3x mai multe solicitări pentru proprietăți în primul trimestru.',
+        tag1: '3x Solicitări',
+        tag2: 'Imobiliar'
       },
-      elena: {
-        name: 'Elena Radu',
-        role: 'Manager @ ShopSmart',
-        problem: 'Rată mică de conversie pe dispozitivele mobile.',
-        liked: 'Focusul obsesiv pe UX și soluțiile creative propuse.',
-        result: '+40% la checkout pe mobil în prima lună.',
-        tag1: '+40% Conversie',
+      chocolateWorld: {
+        name: 'Marcel Constantin',
+        role: 'Proprietar @ Chocolate World',
+        problem: 'Vânzări de ciocolată premium limitate doar la magazinul fizic.',
+        liked: 'Prezentare frumoasă a produselor și checkout fluid.',
+        result: '150% creștere în vânzări prin expansiunea online.',
+        tag1: '150% Vânzări',
         tag2: 'E-commerce'
       },
-      mihai: {
-        name: 'Mihai Ionescu',
-        role: 'Director @ AdVantage',
-        problem: 'Nevoia urgentă a unui tool intern custom pentru raportare.',
-        liked: 'Comunicarea directă, fără bla-bla corporatist.',
-        result: 'Peste 20 ore/săptămână economisite prin automatizare.',
-        tag1: '20h Salvate',
-        tag2: 'Internal Tool'
+      dinails: {
+        name: 'Delia Rotundu',
+        role: 'Fondator @ Dinails UK',
+        problem: 'Sistem manual de programări care genera conflicte.',
+        liked: 'Aplicație mobilă intuitivă și notificări automate.',
+        result: '85% reducere în anulări și programări duble.',
+        tag1: '85% Mai Puține Anulări',
+        tag2: 'Aplicație Mobilă'
       }
     }
   },
