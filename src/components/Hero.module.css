@@ -376,15 +376,15 @@
 }
 
 .visual {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 48px;
+  display: none;
 }
 
 @media (min-width: 1024px) {
   .visual {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     margin-top: 0;
   }
@@ -418,15 +418,21 @@
   border-radius: 16px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  background-image: linear-gradient(rgba(16, 29, 35, 0.3), rgba(16, 29, 35, 0.7)),
-    url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80');
-  background-size: cover;
-  background-position: center;
+}
+
+.cardBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
+  background: linear-gradient(rgba(16, 29, 35, 0.3), rgba(16, 29, 35, 0.7));
 }
 
 .cardContent {

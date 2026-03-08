@@ -52,6 +52,12 @@ function Hero({ dark = false }) {
             <div className={styles.visualWrapper}>
               <div className={styles.backPlate} />
               <div className={styles.card}>
+                <img
+                  src="/hero-card.webp"
+                  alt=""
+                  fetchpriority="high"
+                  className={styles.cardBg}
+                />
                 <div className={styles.overlay} />
                 <div className={styles.cardContent}>
                   <div className={styles.status}>
