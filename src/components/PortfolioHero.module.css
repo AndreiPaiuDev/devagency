@@ -192,7 +192,7 @@
   transform: rotate(2deg);
   animation: float 6s ease-in-out infinite;
   background-image: linear-gradient(rgba(16, 29, 35, 0.75), rgba(16, 29, 35, 0.85)),
-    url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgOOxtNlpaIpdWS2ezFtco3iO4Ojvh-DaVzWzDAspJPcvuRdeJmJYSXE7uXAqB8ctGRAMbFx-ph4wJ69P_U4YLADO7rxVoKdEZz-bE6pqrn8HLX31Sa5q6IafoedJodZSwuecjJ4MV8dP51ybxkiCjbfpviNdlwh4XQtG_Sgtp0LgGLNOaF5v5NV8B0XvGJK3nQECcMEIegAN32fH6NY_KaWYYeuH7ipLOCYxE9H0WrRQ14AtkhxTzgZaWZK3x0sesaq5O5z9akw');
+    url('/images/project-scaleup.jpg');
   background-size: cover;
   background-position: center;
 }

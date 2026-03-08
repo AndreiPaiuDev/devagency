@@ -11,7 +11,7 @@ function PortfolioPreview() {
       category: t.portfolioPreview.projects.scaleup.category,
       description: t.portfolioPreview.projects.scaleup.description,
       image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuDgOOxtNlpaIpdWS2ezFtco3iO4Ojvh-DaVzWzDAspJPcvuRdeJmJYSXE7uXAqB8ctGRAMbFx-ph4wJ69P_U4YLADO7rxVoKdEZz-bE6pqrn8HLX31Sa5q6IafoedJodZSwuecjJ4MV8dP51ybxkiCjbfpviNdlwh4XQtG_Sgtp0LgGLNOaF5v5NV8B0XvGJK3nQECcMEIegAN32fH6NY_KaWYYeuH7ipLOCYxE9H0WrRQ14AtkhxTzgZaWZK3x0sesaq5O5z9akw',
+        '/images/project-scaleup.jpg',
       tags: t.portfolioPreview.projects.scaleup.tags,
       stats: { 
         metric1: t.portfolioPreview.projects.scaleup.metric1, 
@@ -23,7 +23,7 @@ function PortfolioPreview() {
       category: t.portfolioPreview.projects.fashion.category,
       description: t.portfolioPreview.projects.fashion.description,
       image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuAitt-p_BsU5pT6OXBP7-DO0qWPFoEay1s6BtqLsauAOnFK1uZaw7J3Hoxf2z3mnuvXiTaSmZ3TgdcRzVx6HBfNoX7TVyzXApep3Y0ZX6eDDrdusdhAyOBIDm3n2Yd_rWTZfeY-T-1rP7tq5p5ahB0G6oj6RvWYuu4_OAHImDAWyPmoLzVFh62E7cyCQasw6_-2sMS4ZXCOIrqD15WTf2BanIpmmsxHbXFfyxgsuQTdatn6lEvIjdRaJ5o8Z-i7MTDSe6VDUrcH3Q',
+        '/images/project-fashion.jpg',
       tags: t.portfolioPreview.projects.fashion.tags,
       stats: { 
         metric1: t.portfolioPreview.projects.fashion.metric1, 
@@ -35,7 +35,7 @@ function PortfolioPreview() {
       category: t.portfolioPreview.projects.payfast.category,
       description: t.portfolioPreview.projects.payfast.description,
       image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuDntecIY3-G_6oDhj0J55pcLKFyn-XqGRBXol6PiC87f14q6iwsC4SNlkNnUSLnFhQjyQr9USnlOCj7ASNPBwJXQ9e89De_yWr3KjLHhwtPv1GLi9KyVyHG6p7lqzAb-zaD_TlHrRSX2-McrMtf8lN5vPo9M17XOIk08M_KjgTbt5a8GYXEF3A6doPlqjUJyKDro7SB7nINHGeKguaMVCNx_z7wEWNqSgbw8rBbjb5-c09VkA8ekmQgBAJMA5MclSitC7ltUrvH4w',
+        '/images/project-payfast.jpg',
       tags: t.portfolioPreview.projects.payfast.tags,
       stats: { 
         metric1: t.portfolioPreview.projects.payfast.metric1, 
@@ -63,10 +63,8 @@ function PortfolioPreview() {
         <div className={styles.grid}>
           {projects.map((project, index) => (
             <div key={index} className={styles.card}>
-              <div
-                className={styles.imageWrapper}
-                style={{ backgroundImage: `url(${project.image})` }}
-              >
+              <div className={styles.imageWrapper}>
+                <img src={project.image} alt={project.title} loading="lazy" className={styles.cardImg} />
                 <div className={styles.overlay} />
                 <div className={styles.stats}>
                   <div className={styles.statItem}>

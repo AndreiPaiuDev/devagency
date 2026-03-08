@@ -7,9 +7,11 @@ function TestimonialCard({ name, role, image, problem, liked, result, tags }) {
         <span className="material-symbols-outlined">format_quote</span>
       </div>
       <div className={styles.profile}>
-        <div
+        <img
+          src={image}
+          alt={name}
+          loading="lazy"
           className={styles.avatar}
-          style={{ backgroundImage: `url(${image})` }}
         />
         <div>
           <p className={styles.name}>{name}</p>

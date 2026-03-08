@@ -14,9 +14,11 @@ function ProjectCard({
   return (
     <div className={`${styles.card} ${styles[color]}`}>
       <div className={styles.imageWrapper}>
-        <div
+        <img
+          src={image}
+          alt={title}
+          loading="lazy"
           className={styles.image}
-          style={{ backgroundImage: `url(${image})` }}
         />
         <div className={styles.overlay} />
         <div className={styles.badge}>

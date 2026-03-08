@@ -10,7 +10,7 @@ function TestimonialsSection() {
       name: t.testimonials.items.alex.name,
       role: t.testimonials.items.alex.role,
       image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuCTU8V8ZgfZHLj91mS4NrOx8ETr6AQ2jSz0TrrAekDQQ0oMr9TumweCXk8JTxZAGsSV2kBGX8Q2wFNZKceGeR03mMFdAB4Nvt4HrJNCva-SAImFW0cJ5cOUlADdnEeyoQ7TZ6O6vzCYSUWa_dJDVRSn4rKajU8zpvq8olWMYx05qsD_AzZJ2FPUuWPxH0E1D103HrmzLRWoOPs3ySqkNPbuaSXK_THk45Bd4eQaff4bTaM5h-crXurP-8Sn2J_tnfwsIRwpItLAiA',
+        '/images/avatar-alex.jpg',
       problem: t.testimonials.items.alex.problem,
       liked: t.testimonials.items.alex.liked,
       result: t.testimonials.items.alex.result,
@@ -23,7 +23,7 @@ function TestimonialsSection() {
       name: t.testimonials.items.elena.name,
       role: t.testimonials.items.elena.role,
       image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuAKGUUVkfynqscNOVUUuHAJyDDrIBiDVI2BWVheVzrCMvSktBgcbyIBkCqN8UasUwyUXYbuG6gfAeD3vG2FXDEGg1piUhgt7dHi-b62wbL7zbn68-McJ8zHt1sp7RcBcIXLuEQ8anLJIaV88bvElT5VSaCvL9IMDGgorioBlWaT1ayS9LEiQSVWOdk5qGWzICUNaoAXlAaDLJrCfPbpIXHf4ptTNUjqA14auhFETW-h9qv95Qk3oAAxWdZ_adimHmpomo-lZvNzqg',
+        '/images/avatar-elena.jpg',
       problem: t.testimonials.items.elena.problem,
       liked: t.testimonials.items.elena.liked,
       result: t.testimonials.items.elena.result,
@@ -36,7 +36,7 @@ function TestimonialsSection() {
       name: t.testimonials.items.mihai.name,
       role: t.testimonials.items.mihai.role,
       image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuDHgZwVUiWc-_XFn1u2mobmy11hFfFJE74neMsdqv-2yswjKE8dqtDvqohg9sblB5uFWEN5pzivTy581IlSqM047HR42Bniwh8AmHnRLTsgosAhcrKP8nxf5PzJ3-AMZLRYYx_g6JFPoRe3JGbpTA9foad98736RcYuZJmpV_ASp0N5NPozbbAPN7G96GwVUqnq3ouolUPJauktCCCoqFWQ09TPhQuxuj1pUu1OG9QmV1IzY14bDZCU3yW0T2xXydPBOUxekhki7g',
+        '/images/avatar-mihai.jpg',
       problem: t.testimonials.items.mihai.problem,
       liked: t.testimonials.items.mihai.liked,
       result: t.testimonials.items.mihai.result,

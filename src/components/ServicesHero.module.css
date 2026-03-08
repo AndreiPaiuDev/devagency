@@ -234,7 +234,7 @@
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   background-image: linear-gradient(rgba(16, 29, 35, 0.2), rgba(16, 29, 35, 0.8)),
-    url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4H-SHbA0ch4vaMZrAnaxuYA7mW7mlVYQW2sDie0AQqnqvo8Kwi2M6C3Ud7om6Iz5_W96YJAllFgUgnNnEfIgxCNZnRXL6ZkbeTQlELt8Yi_EnCOwgqz4eJl541LLtczd7vjpRYBwJSWnF_yOZQCvVopvLvp4TMVuKMdRouY_nSB5VpDKuaDTvWDXsnaQear81BtaHHYWYNpl78queJGhfQfeIwTyOTaoPrtPwR9Kp4C7yBMt346ZxYJh6k9wKBQLLBU0LNjUgvw');
+    url('/images/services-bg.jpg');
   background-size: cover;
   background-position: center;
 }
