@@ -463,6 +463,14 @@ export const translations = {
         solution: 'Clean corporate website with service highlights, effective business solutions messaging, and clear call-to-actions.',
         metric: '100%',
         metricLabel: 'Professional'
+      },
+      moviestream: {
+        title: 'MovieStream',
+        category: 'Entertainment / Streaming',
+        challenge: 'Users needed a modern, fast platform to browse and discover movies without cluttered UI or slow load times.',
+        solution: 'React app with dynamic movie listings, search, filtering, and a sleek dark-mode interface powered by a movie API.',
+        metric: '100%',
+        metricLabel: 'Responsive'
       }
     }
   },

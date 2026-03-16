@@ -7,6 +7,18 @@ function PortfolioGrid() {
   
   const projects = [
     {
+      title: t.portfolioGrid.projects.moviestream.title,
+      category: t.portfolioGrid.projects.moviestream.category,
+      icon: 'movie',
+      image: '/projects/moviestream.png',
+      url: 'https://moviestream-six.vercel.app/',
+      challenge: t.portfolioGrid.projects.moviestream.challenge,
+      solution: t.portfolioGrid.projects.moviestream.solution,
+      metric: t.portfolioGrid.projects.moviestream.metric,
+      metricLabel: t.portfolioGrid.projects.moviestream.metricLabel,
+      color: 'primary',
+    },
+    {
       title: t.portfolioGrid.projects.scaleup.title,
       category: t.portfolioGrid.projects.scaleup.category,
       icon: 'domain',

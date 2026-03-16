@@ -453,6 +453,14 @@ export const translations = {
         solution: 'Website corporativ curat cu servicii evidențiate, mesaje de soluții eficiente pentru afaceri și call-to-action clare.',
         metric: '100%',
         metricLabel: 'Profesional'
+      },
+      moviestream: {
+        title: 'MovieStream',
+        category: 'Entertainment / Streaming',
+        challenge: 'Utilizatorii aveau nevoie de o platformă modernă și rapidă pentru a descoperi filme, fără o interfață aglomerată.',
+        solution: 'Aplicație React cu listare dinamică a filmelor, căutare, filtrare și o interfață dark-mode elegantă conectată la un API de filme.',
+        metric: '100%',
+        metricLabel: 'Responsive'
       }
     }
   },
